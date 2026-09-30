@@ -209,6 +209,10 @@ public List<Emp> list(String name, short gender, LocalDate begin, LocalDate end)
 
 ## 三、XML映射文件-基于XML配置mysql语句
 
+### 全类名
+
+包名+类名的完整路径，相当于文件的绝对路径；
+
 ### 规范
 
 - XML映射文件的名称与Mapper接口名称一致，并且将XML映射文件和Mapper接口放置在相同包下（**同包同名** ，即在`resource`下再创建一个同名的包）；一般是一个接口对应一份配置文件
