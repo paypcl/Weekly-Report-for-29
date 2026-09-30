@@ -1,5 +1,3 @@
-
-
 # Mybatis
 
 通过java操作数据库；
