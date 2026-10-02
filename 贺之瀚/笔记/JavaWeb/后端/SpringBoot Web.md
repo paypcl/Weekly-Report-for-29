@@ -14,7 +14,7 @@ VSCode使用SpringBoot可以去官方Java下查看文档；
 
 3、运行启动类，打开浏览器测试；默认端口是8080 localhost？
 
-SpringBoot创建项目需要连接`start.spring.io`联网环境下操作； 
+SpringBoot创建项目需要连接`start.spring.io`联网环境下操作；
 
 ## 二、HTTP协议
 
@@ -24,7 +24,7 @@ SpringBoot创建项目需要连接`start.spring.io`联网环境下操作；
 
 1. 基于TCP协议： 面向连接，安全
 2. 基于请求-响应模型的：一次请求对应一次响应
-3. HTTP协议是无状态的协议：对于事务处理没有记忆能力。每次请求-响应都是独立的；优点：速度快；缺点：多次请求间不能共享数据；
+3. HTTP协议是**无状态** 的协议：对于事务处理没有记忆能力。每次请求-响应都是独立的；优点：速度快；缺点：多次请求间不能共享数据；
 
 ### 1.请求协议&请求数据格式
 
@@ -80,13 +80,13 @@ POST请求特有（大小没有限制），存放请求参数；
 
 第二行开始的，同样是key:value形式的键值对
 
-| col1             | col2                                                            |
-| ---------------- | --------------------------------------------------------------- |
-| Content-Type     | 表示该响应内容的类型<br />例如text/html，application/json       |
-| Content-Length   | 表示该响应内容的长度<br />（字节）                              |
-| Content-Encoding | 表示该响应压缩算法<br />例如gzip                                |
-| Cache-Control    | 指示客户端应如何缓存<br />例如max-age=300表示可以最多缓存300秒  |
-| Set-Cookie       | 告诉浏览器为当前页面所在的域设置cookie                          |
+|                  |                                                                |
+| ---------------- | -------------------------------------------------------------- |
+| Content-Type     | 表示该响应内容的类型<br />例如text/html，application/json      |
+| Content-Length   | 表示该响应内容的长度<br />（字节）                             |
+| Content-Encoding | 表示该响应压缩算法<br />例如gzip                               |
+| Cache-Control    | 指示客户端应如何缓存<br />例如max-age=300表示可以最多缓存300秒 |
+| Set-Cookie       | 告诉浏览器为当前页面所在的域设置cookie                         |
 
 #### 响应体
 

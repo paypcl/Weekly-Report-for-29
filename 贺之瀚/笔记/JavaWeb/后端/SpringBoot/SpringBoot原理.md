@@ -32,7 +32,7 @@ IDEA外设置
 
 ## 二、Bean管理
 
-### 获取bean
+### 1.获取bean
 
 主动获取bean对象
 
@@ -44,17 +44,16 @@ IDEA外设置
 // springboot获取IOC容器直接将IOC容器注入即可？
 // 注入IOC容器对象就能调用了？
 private ApplicationContext applicationContext;
-
 ```
 
-默认情况下，bean是单例的
+默认情况下，bean是**单例** 的，一个容器中只能有一个bean对象；
 
-### bean作用域
+- 默认情况下，Spring项目启动时，会把bean都创建好放在IOC容器中；但这个是针对默认的单例非延迟加载的bean而言，实际还会受到作用域和延迟初始化的影响；
 
+### 2.bean作用域
 
+spring支持五种作用域，后三种在web环境生效；
 
 ### 第三方bean
-
-
 
 ## 三、SpringBoot原理
