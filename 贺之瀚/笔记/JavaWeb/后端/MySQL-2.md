@@ -146,7 +146,7 @@ select * form tb01 where dept_id in (select id form tb02 where name = '教研部
 
 案例：查询与韦一笑的入职日期及职位都相同的员工信息；
 
-这里也可以通过两次子查询实现，但很麻烦；更好的解决方式是把日期和职位视作一个**整体** ，语法`(entrydate,job)`，这样就可以通过一次子查询解决了；
+这里也可以通过两次子查询实现，但很麻烦；更好的解决方式是把日期和职位视作一个**整体** ，语法`(entrydate,job)` 即**联合索引**！！！，这样就可以通过一次子查询解决了；
 
 ```MySQL
 select * from tb01 where (entrydate,job) = (select entrydate,job from tb02 where name = '韦一笑');
